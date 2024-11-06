@@ -1,114 +1,75 @@
-// Q1.Find Grades--------------------------------
+// .................................Question 1 ..................................................
 
-// function findGrades(M) {
-//     let grade;
-
-//     switch (true) {
-//         case (M <= 10):
-//             grade = 'E';
-//             break;
-//         case (M <= 20):
-//             grade = 'D';
-//             break;
-//         case (M <= 30):
-//             grade = 'C';
-//             break;
-//         case (M <= 40):
-//             grade = 'B';
-//             break;
-//         case (M <= 50):
-//             grade = 'A';
-//             break;
-        
-//         default:
-//             grade = 'invalid marks';
-//             break;
+// let n = 5;
+// for (let i = 1; i <= n; i++) {
+//     let pattern = '';
+//     for (let j = 1; j <= i; j++) {
+//         pattern += '* ';
 //     }
-//     return grade;
+//     console.log(pattern);
 // }
-// let M = 1
-// console.log(findGrades(M));
+
+// ....................................Question 2............................................................
 
 
-// Q2. Get Value--------------------------------------
-
-// function getValue (C) {
-//     let value;
-
-//     switch (C) {
-//         case 'P':
-//         case 'p':
-//             value = 'PrepBytes';
-//             break;
-//         case 'Z':
-//         case 'z':
-//             value = 'Zenith';
-//             break;
-//         case 'E':
-//         case 'e':
-//             value = 'Expert Coder';
-//             break;
-//         case 'D':
-//         case 'd':
-//             value = 'Data Structure';
-//             break;
-
-//         default:
-//         value = 'invaild value';
-//         break;
+// for (let i = 1; i <= 45; i++) {
+   
+//     if (i % 3 === 0 && i % 5 === 0) {
+//         console.log("FizzBuzz");
 //     }
-//     return value;
-// }
-// let c = 'E';
-// console.log(getValue(c));
-
-
-//Q3. Find the maximum out of three numbers.---------------------------------------------
-
-// function Max_out_of_three (A, B, C) {
-//     if (A === B && B === C) {
-//         return -1
-//     } else {
-//         return Math.max(A, B, C);     
+  
+//     else if (i % 3 === 0) {
+//         console.log("Fizz");
 //     }
-// }
-// let A = 2,
-// B = 5, 
-// C = 4;
-// console.log(Max_out_of_three(A, B, C));
-
-
-//Q4. Second Smallest------------------------------------------------------
-
-// function findSndSmallest (X, Y, Z) {
-//     let arr = [X, Y, Z];
     
-//     arr.sort((a, b) => a - b);
-    
-//     return arr[1];
-// }
-// let X = 2, Y = 9, Z = 23; 
-// console.log(findSndSmallest(X, Y, Z));
-
-
-//Q5. Check whether the triangle is Acute or Obtuse-------------------------------------------
-
-// function Triangle_Check(A, B, C) {
-//     if (A + B + C === 180) {
-//         if (A > 90 || B > 90 || C > 90) {
-//             return "obtuse";
-//         } else {
-//             return "acute"; 
-//         }
-//     } else {
-//         return "Invalid triangle"; 
+//     else if (i % 5 === 0) {
+//         console.log("Buzz");
+//     }
+   
+//     else {
+//         console.log(i);
 //     }
 // }
-// let A = 60, B = 100, C = 20;
-// console.log(Triangle_Check(A, B, C));
 
 
 
+// ........................................QUESTION 3................................................
 
 
+// var numbersArray = [1, 13, 22, 123, 49];
+// var sum = 0;
+// for (let i = 0; i < numbersArray.length; i++) {
+//     sum += numbersArray[i];
+// }
+
+// console.log("The sum of the array is:", sum);
+
+// ..............................................question 4...........................................
+
+// var arr_1 = [3, 5, 22, 5, 7, 2, 45, 75, 89, 21, 2]; 
+// var arr_2 = [9, 2, 42, 55, 71, 22, 4, 5, 90, 25, 26]; 
+// var sum1 = 0;
+// var sum2 = 0;
+
+// for (var i = 0; i < arr_1.length; i++) {
+//     sum1 += arr_1[i];
+// }
+// for (var i = 0; i < arr_2.length; i++) {
+//     sum2 += arr_2[i];
+// }
+
+// var totalSum = sum1 + sum2;
+
+// console.log(`${sum1} + ${sum2} = ${totalSum}`);
+
+
+
+// .......................................QUESTION 5.........................................................
+
+// let arr = [43, "what", 9, true, "cannot", false, "be", 3, true];
+
+// Output elements in reverse order, each on a new line
+// for (let i = arr.length - 1; i >= 0; i--) {
+//     console.log(arr[i]);
+// }
 
