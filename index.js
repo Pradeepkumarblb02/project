@@ -1,101 +1,114 @@
-// Q1. Add two Numbers---------------------
+// Q1.Find Grades--------------------------------
 
-// function AddTwoNumbers(a, b){
-//     return a + b
-// }
-// let a = 2
-// let b = 5
-// let res = AddTwoNumbers(a, b);
-// console.log(res);
+// function findGrades(M) {
+//     let grade;
 
-
-// Q2. Find if the conditions are obeyed or not?-------------
-
-// function Is_Valid(A, B) {
-//     return (A < 10) && (A > B);
-// }
-// let a = 5
-// let b = 3
-// let abc = Is_Valid(a, b);
-// console.log(abc);
-
-
-// Q3.Check the conditions-----------------------------
-
-// function Check(A, B) {
-//     if (A % 10 === 0 && B % 10 === 0) {
-//         return true;
+//     switch (true) {
+//         case (M <= 10):
+//             grade = 'E';
+//             break;
+//         case (M <= 20):
+//             grade = 'D';
+//             break;
+//         case (M <= 30):
+//             grade = 'C';
+//             break;
+//         case (M <= 40):
+//             grade = 'B';
+//             break;
+//         case (M <= 50):
+//             grade = 'A';
+//             break;
+        
+//         default:
+//             grade = 'invalid marks';
+//             break;
 //     }
-//     else if (A % 10 !== 0 && B % 10 !== 0) {
-//         return false;
+//     return grade;
+// }
+// let M = 1
+// console.log(findGrades(M));
+
+
+// Q2. Get Value--------------------------------------
+
+// function getValue (C) {
+//     let value;
+
+//     switch (C) {
+//         case 'P':
+//         case 'p':
+//             value = 'PrepBytes';
+//             break;
+//         case 'Z':
+//         case 'z':
+//             value = 'Zenith';
+//             break;
+//         case 'E':
+//         case 'e':
+//             value = 'Expert Coder';
+//             break;
+//         case 'D':
+//         case 'd':
+//             value = 'Data Structure';
+//             break;
+
+//         default:
+//         value = 'invaild value';
+//         break;
 //     }
-//     else {
-//         return true;
+//     return value;
+// }
+// let c = 'E';
+// console.log(getValue(c));
+
+
+//Q3. Find the maximum out of three numbers.---------------------------------------------
+
+// function Max_out_of_three (A, B, C) {
+//     if (A === B && B === C) {
+//         return -1
+//     } else {
+//         return Math.max(A, B, C);     
 //     }
 // }
-// let A = 12;
-// let B = 20;
-// let result = Check(A, B);
-// console.log(result);  
+// let A = 2,
+// B = 5, 
+// C = 4;
+// console.log(Max_out_of_three(A, B, C));
 
 
-// Q4.Find the first digit of a 4 digit number-------------------------
+//Q4. Second Smallest------------------------------------------------------
 
-// function First_Digit(b) {
-//     return Math.floor(b / 1000);
+// function findSndSmallest (X, Y, Z) {
+//     let arr = [X, Y, Z];
+    
+//     arr.sort((a, b) => a - b);
+    
+//     return arr[1];
 // }
-// let b = 4567;
-// let firstDigit = First_Digit(b);
-// console.log(firstDigit); 
+// let X = 2, Y = 9, Z = 23; 
+// console.log(findSndSmallest(X, Y, Z));
 
 
-// Q5.Find the last digit of a 4 digit number------------------------
+//Q5. Check whether the triangle is Acute or Obtuse-------------------------------------------
 
-// function Last_Digit(a) {
-//     return Math.floor(a % 10);
+// function Triangle_Check(A, B, C) {
+//     if (A + B + C === 180) {
+//         if (A > 90 || B > 90 || C > 90) {
+//             return "obtuse";
+//         } else {
+//             return "acute"; 
+//         }
+//     } else {
+//         return "Invalid triangle"; 
+//     }
 // }
-// let a = 4567
-// let abc = Math.floor(a % 10);
-// console.log(abc);
+// let A = 60, B = 100, C = 20;
+// console.log(Triangle_Check(A, B, C));
 
 
-// Q6.Find the remainder---------------------------------
-
-// function Find_the_remainder(A, B) {
-//     return B % A;
-// }
-// let A = 2;
-// let B = 9;
-// let result = Find_the_remainder(A, B);
-// console.log(result); 
 
 
-// Q7.Multiply two Numbers----------------------------------
-
-//  function Multiply_two_number(a, b) {
-//     return a * b
-//  }
-//  let a = 2
-//  let b = 5
-//  let abc = Multiply_two_number(a, b);
-//  console.log(abc);
 
 
-// Q8. Marks Calculator---------------------------------
-
-// function Sum(A, B, C) {
-//     return A + B + C;
-// }
-// function Average(A, B, C) {
-//     return (A + B + C) / 3;
-// }
-// let A = 50;
-// let B = 20;
-// let C = 100;
-
-// let totalMarks = Sum(A, B, C);
-
-// let averageMarks = Average(A, B, C);
-
-// console.log(totalMarks);     
-// console.log(averageMarks.toFixed(2));  
